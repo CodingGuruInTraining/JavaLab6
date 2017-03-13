@@ -65,5 +65,12 @@ public class ITECCourseManager {
         infotechCourse.writeCourseInfo();
         // Adds object to ArrayList.
         catalog.add(infotechCourse);
+
+        // Loops over all ITECCourse objects and displays their room number and
+        // number of free spaces left.
+        for (ITECCourse course : catalog) {
+            System.out.println(course.getName() + " in room #" + course.getRoom() +
+            " currently has " + course.getFreeSpaces() + " free spaces for students.");
+        }
     }
 }
