@@ -1,7 +1,6 @@
 package com.mark;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * This Class outlines the properties that one may
@@ -36,16 +35,12 @@ public class Lake {
     private ArrayList<Double> allTimes;
     private double fastestTime;
     private double slowestTime;
-    public Scanner numberScanner;
-    public Scanner stringScanner;
 
     public Lake (String name, double firstTime) {
         this.name = name;
         this.allTimes.add(firstTime);
         this.fastestTime = firstTime;
         this.slowestTime = firstTime;
-        this.numberScanner = new Scanner(System.in);
-        this.stringScanner = new Scanner(System.in);
     }
 
     public void enterNewTime(double newTime) {
@@ -57,10 +52,4 @@ public class Lake {
             this.slowestTime = newTime;
         }
     }
-
-    public void closeScanners() {
-        numberScanner.close();
-        stringScanner.close();
-    }
-
 }
