@@ -4,9 +4,34 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Created by hl4350hb on 3/13/2017.
+ * This Class outlines the properties that one may
+ * want to save when tracking their running times.
  */
 public class Lake {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getFastestTime() {
+        return fastestTime;
+    }
+
+    public void setFastestTime(double fastestTime) {
+        this.fastestTime = fastestTime;
+    }
+
+    public double getSlowestTime() {
+        return slowestTime;
+    }
+
+    public void setSlowestTime(double slowestTime) {
+        this.slowestTime = slowestTime;
+    }
+
     private String name;
     private ArrayList<Double> allTimes;
     private double fastestTime;
