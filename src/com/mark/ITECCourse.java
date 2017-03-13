@@ -3,7 +3,8 @@ package com.mark;
 import java.util.ArrayList;
 
 /**
- * Created by hl4350hb on 3/1/2017.
+ * This program defines a new Class for ITEC courses and attributes
+ * of each course.
  */
 public class ITECCourse {
     private String name;
