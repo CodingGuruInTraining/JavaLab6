@@ -44,6 +44,15 @@ public class Lakes {
         return lakeTime;
     }
 
+    public Lake findLakeObject(String lakeName) {
+        for (Lake lake : this.allLakes) {
+            if (lakeName.equalsIgnoreCase(lake.getName())) {
+                return lake;
+            }
+        }
+        return null;
+    }
+
     public void closeScanners() {
         numberScanner.close();
         stringScanner.close();

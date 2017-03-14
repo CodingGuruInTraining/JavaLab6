@@ -10,29 +10,24 @@ public class Lake {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public double getFastestTime() {
         return fastestTime;
     }
-
     public void setFastestTime(double fastestTime) {
         this.fastestTime = fastestTime;
     }
-
     public double getSlowestTime() {
         return slowestTime;
     }
-
     public void setSlowestTime(double slowestTime) {
         this.slowestTime = slowestTime;
     }
 
     private String name;
-    private ArrayList<Double> allTimes;
+    private ArrayList<Double> allTimes = new ArrayList<>();
     private double fastestTime;
     private double slowestTime;
 
