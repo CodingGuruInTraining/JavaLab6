@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * want to save when tracking their running times.
  */
 public class Lake {
+    // Getters and Setters.
     public String getName() {
         return name;
     }
@@ -26,11 +27,13 @@ public class Lake {
         this.slowestTime = slowestTime;
     }
 
+    // Attributes.
     private String name;
     private ArrayList<Double> allTimes = new ArrayList<>();
     private double fastestTime;
     private double slowestTime;
 
+    // Constructor.
     public Lake (String name, double firstTime) {
         this.name = name;
         this.allTimes.add(firstTime);
@@ -38,6 +41,7 @@ public class Lake {
         this.slowestTime = firstTime;
     }
 
+    // Entry method that updates attributes accordingly.
     public void enterNewTime(double newTime) {
         this.allTimes.add(newTime);
         if (newTime < this.fastestTime) {
