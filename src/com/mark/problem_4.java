@@ -1,6 +1,6 @@
 package com.mark;
 
-import com.sun.java.util.jar.pack.Attribute;
+import java.util.InputMismatchException;
 
 /**
  * This program receives input from the User and collects
@@ -8,7 +8,8 @@ import com.sun.java.util.jar.pack.Attribute;
  */
 public class problem_4 {
     public static void main(String[] args) {
-       try {
+       // Exception handler.
+        try {
            // Create a 'container' object to hold all of
            // the Lake objects and provide some methods.
            Lakes lakeHolder = new Lakes();
@@ -35,8 +36,9 @@ public class problem_4 {
            // the container object.
            lakeHolder.closeScanners();
        }
-       catch () {
-
+       catch (InputMismatchException err) {
+           // Catch for bad inputs.
+           System.out.println("Incorrect data type entered.");
        }
     }
 }
